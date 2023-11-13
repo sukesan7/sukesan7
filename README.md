@@ -10,9 +10,7 @@
 
 <div align="center">
  
- 🔭 I’m currently working on **A Discord Bot**
- 
- 🌱 I’m currently learning **Full-Stack Development**
+ **Learning Full-Stack Development**
  
  </div>
  
