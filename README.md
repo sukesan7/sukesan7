@@ -25,21 +25,25 @@ Specializing in building **high-fidelity trading infrastructure** and **low-late
 <h2>Featured Engineering</h2>
 
 #### 🔹 [Meridian](https://github.com/sukesan7/meridian)
-**Deterministic backtesting engine for intraday futures strategies.**
+**Deterministic, artifact-audited backtesting engine for intraday futures strategies (NQ/ES RTH).**
 <br/>
-> *Python, Event-Driven Architecture, Quantitative Finance*
+> *Python, Event-Driven Simulation, Market Microstructure (bar-based)*
 
-* **Features:** Regime-adaptive slippage, strict session handling (America/New_York), and causal integrity enforcement.
-* **Performance:** Validated on Strategy 3A (0.20 R Expectancy / 1.69 SQN).
-* **Engineering:** Full CI/CD pipeline, type-strict codebase, and semantic reproducibility.
+* **Correctness:** Causal multi-timeframe feature alignment (no look-ahead/session leakage) + next-bar-open execution sourced strictly from market tape (no execution leakage).
+* **Execution Model:** Tick-based slippage with time-window regimes + fill-time risk constraints to prevent “passes at signal, fails at execution” false positives.
+* **Reproducibility:** CI-gated ruff/mypy/pytest + determinism regression checks; run artifacts include SHA256 provenance via `run_meta.json` for tamper-evident outputs.
 
-#### 🔹 [LaminarCore](https://github.com/sukesan7/laminar-core)
-**A high-performance Limit Order Book (LOB) matching engine designed for microsecond-level latency simulation.**
+
+#### 🔹 [Stratos](https://github.com/sukesan7/stratos)
+**Deterministic C++20 price-time priority matching engine (LOB) with audit-grade correctness harnesses.**
 <br/>
-> *C++, Market Microstructure, HFT*
+> *C++20, Market Microstructure, Low-Latency Systems*
 
 *In Development (Q1 2026).*
-* **Architecture:** Utilizes ring buffers and pre-allocated memory pools for zero-allocation execution.
+* **Core Engine:** Price–time priority matching with fixed-point prices (tick enforcement), limit/market/cancel flows, and fail-fast book invariants to prevent silent state corruption.
+* **Correctness First:** Includes a slow-but-correct oracle reference engine (`std::map` + FIFO) and **seeded differential tests** that compare fills + state checksums over randomized event streams with reproducible failure seeds.
+* **Replay & Hardening:** Planned binary event log + deterministic replay boundary, Google Benchmark baselines (p50/p99, throughput), and adversarial testing via ASan/UBSan + libFuzzer (advanced order types out of scope for v1.0).
+
 
 #### 🔹 [FPGA RISC Core](https://github.com/sukesan7/General-Purpose-Processor)
 *Implementation of a custom processor architecture on FPGA.*
@@ -47,6 +51,8 @@ Specializing in building **high-fidelity trading infrastructure** and **low-late
 > *VHDL, Quartus II, Hardware Design*
 
 * **Focus:** ALU design, instruction pipelining, and register transfer level (RTL) logic.
+
+
 
 
 
