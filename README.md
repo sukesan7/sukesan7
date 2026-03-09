@@ -5,8 +5,6 @@
 **Computer Engineering @ Toronto Metropolitan University**  
 Building **deterministic trading infrastructure**, **market-data systems**, and **low-latency C++20 software**.
 
-Toronto, ON · [LinkedIn](https://linkedin.com/in/sukesan)
-
 </div>
 
 ---
@@ -51,7 +49,7 @@ Toronto, ON · [LinkedIn](https://linkedin.com/in/sukesan)
 
 ---
 
-### 🔹 [Auro](https://github.com/sukesan7)
+### 🔹 [Auro](https://github.com/sukesan7/auro)
 **C++20 market-data systems project for capture, compact binary storage, and deterministic replay of crypto exchange feeds.**  
 > *C++20, Market Data, Boost.Asio/Beast, simdjson, Systems Experimentation*
 
@@ -61,7 +59,7 @@ Toronto, ON · [LinkedIn](https://linkedin.com/in/sukesan)
 
 ---
 
-### 🔹 [Aegis](https://github.com/sukesan7)
+### 🔹 [Aegis](https://github.com/sukesan7/aegis)
 **Real-Time EMS Navigation, Triage & Algorithmic Routing Telemetry.**  
 > *React, TypeScript, FastAPI, Python, OSMnx, NetworkX*
 
