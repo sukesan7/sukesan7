@@ -1,59 +1,87 @@
-<h1 align="center">Hi, I'm Sukesan</h1>
-
 <div align="center">
 
-Computer Engineering @ **Toronto Metropolitan University**
-<br/>
-Specializing in building **high-fidelity trading infrastructure** and **low-latency systems**.
-    
+# Sukesan Selvaraveendran
+
+**Computer Engineering @ Toronto Metropolitan University**  
+Building **deterministic trading infrastructure**, **market-data systems**, and **low-latency C++20 software**.
+
+Toronto, ON · [LinkedIn](https://linkedin.com/in/sukesan)
+
 </div>
 
 ---
 
-<h2>Technical Focus</h2>
+## Technical Focus
 
-**Infrastructure**
-`Python` `Pandas` `Polars` `Event-Driven Architecture` `Monte Carlo Methods`
+**Trading & Simulation**  
+`Python` `Event-Driven Simulation` `Backtesting` `Execution Modeling` `Market Microstructure` `Monte Carlo Methods`
 
-**Systems Engineering**
-`C++20` `Lock-free Data Structures` `Multithreading` `Ring Buffers`
+**Systems Engineering**  
+`C++20` `Low-Latency Systems` `Binary Logging` `Deterministic Replay` `Multithreading` `Lock-Free SPSC Queues`
 
-**Hardware & FPGA**
+**Data & Tooling**  
+`Pandas` `NumPy` `Polars` `PyArrow` `pytest` `ruff` `mypy` `GitHub Actions`
+
+**Hardware & Architecture**  
 `VHDL` `Quartus II` `Computer Architecture` `RTL Design`
 
+---
 
-<h2>Featured Engineering</h2>
+## Featured Engineering
 
-#### 🔹 [Meridian](https://github.com/sukesan7/meridian)
-**Deterministic, artifact-audited backtesting engine for intraday futures strategies (NQ/ES RTH).**
-<br/>
-> *Python, Event-Driven Simulation, Market Microstructure (bar-based)*
+### 🔹 [Meridian](https://github.com/sukesan7/meridian)
+**Deterministic, event-driven backtesting engine for intraday futures.**  
+> *Python, Event-Driven Simulation, Execution Modeling, Market Microstructure*
 
-* **Correctness:** Causal multi-timeframe feature alignment (no look-ahead/session leakage) + next-bar-open execution sourced strictly from market tape (no execution leakage).
-* **Execution Model:** Tick-based slippage with time-window regimes + fill-time risk constraints to prevent “passes at signal, fails at execution” false positives.
-* **Reproducibility:** CI-gated ruff/mypy/pytest + determinism regression checks; run artifacts include SHA256 provenance via `run_meta.json` for tamper-evident outputs.
+- Built for **causal integrity**, with strict session handling and feature generation designed to prevent look-ahead and leakage.
+- Models **regime-adaptive execution**, including slippage, timing, and fill-time risk constraints to avoid unrealistic strategy results.
+- Designed for **reproducibility**, with CI-gated testing, determinism checks, and artifact-backed outputs for auditable runs.
 
+---
 
-#### 🔹 [Stratos](https://github.com/sukesan7/stratos)
-**Deterministic C++20 price-time priority matching engine (LOB) with audit-grade correctness harnesses.**
-<br/>
-> *C++20, Market Microstructure, Low-Latency Systems*
+### 🔹 [Stratos](https://github.com/sukesan7/stratos)
+**Deterministic price-time priority matching engine with oracle diff testing, replay, and verification harnesses.**  
+> *C++20, Limit Order Books, Matching Engines, Low-Latency Systems*
 
-*In Development (Q1 2026).*
-* **Core Engine:** Price–time priority matching with fixed-point prices (tick enforcement), limit/market/cancel flows, and fail-fast book invariants to prevent silent state corruption.
-* **Correctness First:** Includes a slow-but-correct oracle reference engine (`std::map` + FIFO) and **seeded differential tests** that compare fills + state checksums over randomized event streams with reproducible failure seeds.
-* **Replay & Hardening:** Planned binary event log + deterministic replay boundary, Google Benchmark baselines (p50/p99, throughput), and adversarial testing via ASan/UBSan + libFuzzer (advanced order types out of scope for v1.0).
+*Under construction — Q1 2026.*
 
+- Implements **price-time priority matching** with fixed-point prices, deterministic order flow, and fail-fast invariants.
+- Includes a **slow-but-correct oracle engine** plus seeded differential tests to compare fills and state across randomized event streams.
+- Being extended with **binary replay**, benchmark instrumentation, and adversarial hardening for correctness-first systems development.
 
-#### 🔹 [FPGA RISC Core](https://github.com/sukesan7/General-Purpose-Processor)
-*Implementation of a custom processor architecture on FPGA.*
-<br/>
-> *VHDL, Quartus II, Hardware Design*
+---
 
-* **Focus:** ALU design, instruction pipelining, and register transfer level (RTL) logic.
+### 🔹 [Auro](https://github.com/sukesan7)
+**C++20 market-data systems project for capture, compact binary storage, and deterministic replay of crypto exchange feeds.**  
+> *C++20, Market Data, Boost.Asio/Beast, simdjson, Systems Experimentation*
 
+- Captures live exchange market-data messages and stores them in a **compact append-only binary format** for offline analysis and benchmarking.
+- Separates network I/O from downstream processing using a **lock-free queue architecture** to keep ingestion paths responsive under bursty flow.
+- Supports **deterministic replay** for parser benchmarking, systems experiments, and repeatable downstream analysis workflows.
 
+---
 
+### 🔹 [Aegis](https://github.com/sukesan7)
+**Real-Time EMS Navigation, Triage & Algorithmic Routing Telemetry.**  
+> *React, TypeScript, FastAPI, Python, OSMnx, NetworkX*
 
+- Built as an operator-facing emergency response system combining **routing, telemetry, dispatch visibility, and triage workflows**.
+- Added **algorithm-comparison and rerouting capabilities** for scenario-based route evaluation and response planning.
+- Awarded **York Region's Best Community Impact Hack** at **CTRL+HACK+DEL 2.0**.
 
+---
 
+## Engineering Interests
+
+- Deterministic simulation and replay systems
+- Market data capture, parsing, and execution infrastructure
+- Matching engines and exchange-style correctness testing
+- Latency-aware C++ systems and performance profiling
+- Event-driven architecture for finance and real-time analytics
+
+---
+
+## Currently Building
+
+- Advancing **Stratos** into a hardened matching engine with replay, verification, and benchmark artifacts
+- Continuing to improve **Meridian** around correctness, execution realism, and research workflow quality
