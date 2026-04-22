@@ -1,85 +1,42 @@
 <div align="center">
 
-# Sukesan Selvaraveendran
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,100:000000&height=180&section=header&text=Sukesan&fontSize=42&fontColor=ffffff&fontAlignY=35&animation=fadeIn" width="100%" />
 
-**Computer Engineering @ Toronto Metropolitan University**  
-Building **deterministic trading infrastructure**, **market-data systems**, and **low-latency C++20 software**.
+**Computer Engineering @ Toronto Metropolitan University**
+
+Building **deterministic trading infrastructure**, **market-data systems**, and **low-latency software**.
 
 </div>
 
----
+<br>
 
 ## Technical Focus
 
 **Trading & Simulation**  
-`Python` `Event-Driven Simulation` `Backtesting` `Execution Modeling` `Market Microstructure` `Monte Carlo Methods`
+`Python` `Event-Driven Simulation` `Backtesting` `Execution Modeling` `Walk-Forward Validation` `Monte Carlo Methods`
 
 **Systems Engineering**  
-`C++20` `Low-Latency Systems` `Binary Logging` `Deterministic Replay` `Multithreading` `Lock-Free SPSC Queues`
+`C++20` `Low-Latency Systems` `Binary Logging` `Deterministic Replay` `Multithreading` `Lock-Free Queues`
 
 **Data & Tooling**  
-`Pandas` `NumPy` `Polars` `PyArrow` `pytest` `ruff` `mypy` `GitHub Actions`
+`Polars` `Pandas` `NumPy` `PyArrow` `pytest` `ruff` `mypy` `GitHub Actions` `YAML` `CLI Tooling`
 
 **Hardware & Architecture**  
 `VHDL` `Quartus II` `Computer Architecture` `RTL Design`
 
----
+<br>
 
 ## Featured Engineering
 
-### 🔹 [Meridian](https://github.com/sukesan7/meridian)
-**Deterministic, event-driven backtesting engine for intraday futures.**  
-> *Python, Event-Driven Simulation, Execution Modeling, Market Microstructure*
+| Project | Description | Stack |
+|:--|:--|:--|
+| [**Meridian**](https://github.com/sukesan7/meridian) | Deterministic, event-driven backtesting engine for intraday futures research, designed around causal integrity, strict session handling, and regime-aware execution modeling. | `Python` `Polars` `Pandas` `NumPy` `PyArrow` |
+| [**Astra**](https://github.com/sukesan7/astra) | End-to-end quantitative research, backtesting, simulation, and submission toolkit built for IMC Prosperity 4. Includes deterministic event-driven backtesting, hyperparameter optimization, walk-forward validation, execution stress testing, automated candidate selection, and a zero-dependency submission bundler through unified YAML config and CLI workflows. | `Python` `YAML` `CLI` `Backtesting` `Optimization` |
+| [**Auro**](https://github.com/sukesan7/auro) | C++20 market-data systems project for capturing exchange feeds, storing them in a compact append-only binary format, and replaying them deterministically for offline analysis, parser benchmarking, and systems experimentation. | `C++20` `Boost.Beast/Asio` `simdjson` `CMake` `Catch2` |
+| [**Aegis**](https://github.com/sukesan7/aegis) | Real-time EMS navigation, triage, and routing telemetry MVP featuring live mapping, rerouting logic, and algorithm benchmarking. Built at CTRL+HACK+DEL 2.0, where it won York Region’s Best Community Impact Hack. | `React` `TypeScript` `FastAPI` `Python` `OSMnx` `NetworkX` |
 
-- Built for **causal integrity**, with strict session handling and feature generation designed to prevent look-ahead and leakage.
-- Models **regime-adaptive execution**, including slippage, timing, and fill-time risk constraints to avoid unrealistic strategy results.
-- Designed for **reproducibility**, with CI-gated testing, determinism checks, and artifact-backed outputs for auditable runs.
+<div align="center">
 
----
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,100:000000&height=150&section=footer" width="100%" />
 
-### 🔹 [Stratos](https://github.com/sukesan7/stratos)
-**Deterministic price-time priority matching engine with oracle diff testing, replay, and verification harnesses.**  
-> *C++20, Limit Order Books, Matching Engines, Low-Latency Systems*
-
-*Under construction — Q1 2026.*
-
-- Implements **price-time priority matching** with fixed-point prices, deterministic order flow, and fail-fast invariants.
-- Includes a **slow-but-correct oracle engine** plus seeded differential tests to compare fills and state across randomized event streams.
-- Being extended with **binary replay**, benchmark instrumentation, and adversarial hardening for correctness-first systems development.
-
----
-
-### 🔹 [Auro](https://github.com/sukesan7/auro)
-**C++20 market-data systems project for capture, compact binary storage, and deterministic replay of crypto exchange feeds.**  
-> *C++20, Market Data, Boost.Asio/Beast, simdjson, Systems Experimentation*
-
-- Captures live exchange market-data messages and stores them in a **compact append-only binary format** for offline analysis and benchmarking.
-- Separates network I/O from downstream processing using a **lock-free queue architecture** to keep ingestion paths responsive under bursty flow.
-- Supports **deterministic replay** for parser benchmarking, systems experiments, and repeatable downstream analysis workflows.
-
----
-
-### 🔹 [Aegis](https://github.com/sukesan7/aegis)
-**Real-Time EMS Navigation, Triage & Algorithmic Routing Telemetry.**  
-> *React, TypeScript, FastAPI, Python, OSMnx, NetworkX*
-
-- Built as an operator-facing emergency response system combining **routing, telemetry, dispatch visibility, and triage workflows**.
-- Added **algorithm-comparison and rerouting capabilities** for scenario-based route evaluation and response planning.
-- Awarded **York Region's Best Community Impact Hack** at **CTRL+HACK+DEL 2.0**.
-
----
-
-## Engineering Interests
-
-- Deterministic simulation and replay systems
-- Market data capture, parsing, and execution infrastructure
-- Matching engines and exchange-style correctness testing
-- Latency-aware C++ systems and performance profiling
-- Event-driven architecture for finance and real-time analytics
-
----
-
-## Currently Building
-
-- Advancing **Stratos** into a hardened matching engine with replay, verification, and benchmark artifacts
-- Continuing to improve **Meridian** around correctness, execution realism, and research workflow quality
+</div>
