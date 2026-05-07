@@ -12,17 +12,17 @@ Building **deterministic trading infrastructure**, **market-data systems**, and 
 
 ## Technical Focus
 
-**Trading & Simulation**  
-`Python` `Event-Driven Simulation` `Backtesting` `Execution Modeling` `Walk-Forward Validation` `Monte Carlo Methods`
+**Trading Systems**  
+`Backtesting` `Event-Driven Simulation` `Execution Modeling` `Walk-Forward Validation` `Monte Carlo` `Risk Controls`
 
-**Systems Engineering**  
-`C++20` `Low-Latency Systems` `Binary Logging` `Deterministic Replay` `Multithreading` `Lock-Free Queues`
+**Market Data & Systems Engineering**  
+`C++20` `Python` `Low-Latency Systems` `Binary Logging` `Deterministic Replay` `Multithreading` `Lock-Free Queues`
 
-**Data & Tooling**  
-`Polars` `Pandas` `NumPy` `PyArrow` `pytest` `ruff` `mypy` `GitHub Actions` `YAML` `CLI Tooling`
+**Data Engineering & Research Tooling**  
+`Polars` `Pandas` `NumPy` `PyArrow` `SQL` `YAML` `CLI Tooling`
 
-**Hardware & Architecture**  
-`VHDL` `Quartus II` `Computer Architecture` `RTL Design`
+**Software Quality & Infrastructure**  
+`pytest` `Catch2` `ruff` `mypy` `CMake` `GitHub Actions` `Linux`
 
 <br>
 
@@ -30,10 +30,11 @@ Building **deterministic trading infrastructure**, **market-data systems**, and 
 
 | Project | Description | Stack |
 |:--|:--|:--|
-| [**Meridian**](https://github.com/sukesan7/meridian) | Deterministic, event-driven backtesting engine for intraday futures research, designed around causal integrity, strict session handling, and regime-aware execution modeling. | `Python` `Polars` `Pandas` `NumPy` `PyArrow` |
-| [**Astra**](https://github.com/sukesan7/astra) | End-to-end quantitative research, backtesting, simulation, and submission toolkit built for IMC Prosperity 4. Includes deterministic event-driven backtesting, hyperparameter optimization, walk-forward validation, execution stress testing, automated candidate selection, and a zero-dependency submission bundler through unified YAML config and CLI workflows. | `Python` `YAML` `CLI` `Backtesting` `Optimization` |
-| [**Auro**](https://github.com/sukesan7/auro) | C++20 market-data systems project for capturing exchange feeds, storing them in a compact append-only binary format, and replaying them deterministically for offline analysis, parser benchmarking, and systems experimentation. | `C++20` `Boost.Beast/Asio` `simdjson` `CMake` `Catch2` |
-| [**Aegis**](https://github.com/sukesan7/aegis) | Real-time EMS navigation, triage, and routing telemetry MVP featuring live mapping, rerouting logic, and algorithm benchmarking. Built at CTRL+HACK+DEL 2.0, where it won York Region’s Best Community Impact Hack. | `React` `TypeScript` `FastAPI` `Python` `OSMnx` `NetworkX` |
+| [**Meridian**](https://github.com/sukesan7/meridian) | Deterministic, event-driven backtesting engine for intraday futures research, built around causal feature generation, next-bar-open execution, strict RTH session handling, immutable run artifacts, walk-forward validation, Monte Carlo analysis, and CI-enforced determinism checks. | `Python 3.10+` `Pandas` `NumPy` `Parquet` `YAML` `pytest` `mypy` `Ruff` `GitHub Actions` |
+| [**Auro**](https://github.com/sukesan7/auro) | C++20 market-data infrastructure for capturing crypto exchange feeds, writing compact append-only binary recordings, building replay indexes, and deterministically replaying streams for parser benchmarking and offline analysis. | `C++20` `CMake` `simdjson` `CLI11` `Catch2` `Boost.Beast/Asio` `OpenSSL` |
+| [**Astra**](https://github.com/sukesan7/astra) | IMC Prosperity 4 research terminal with deterministic backtesting, portal-parity execution, scenario stress testing, walk-forward validation, hyperparameter optimization, visual analytics, and AST-based submission bundling. | `Python 3.11+` `Next.js` `Parquet` `YAML` `Ruff` `AST Tooling` `Type-Checked Tests` |
+| [**Instigator**]([https://github.com/sukesan7/instigator](https://github.com/sukesan7/instigate-cafe-bot)) | Modular Discord operations bot with slash-command tooling, ATS job aggregation, transit and market alert pollers, SQLite-backed persistence, server economy/game systems, and a Gemini-powered mention assistant. | `Python 3.11+` `discord.py` `SQLite` `asyncio` `Gemini API` `ATS APIs` `Yahoo Finance` |
+| [**Aegis**](https://github.com/sukesan7/aegis) | Real-time EMS navigation and routing telemetry dashboard with OSM-based routing, live vehicle simulation, disruption re-routing, AI triage, and Dijkstra vs Duan–Mao BM-SSSP benchmark visualization. Winner of York Region’s Best Community Impact Hack. | `React` `TypeScript` `FastAPI` `MapLibre GL` `OSMnx` `NetworkX` `Recharts` `Node.js` |
 
 <div align="center">
 
