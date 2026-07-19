@@ -2,39 +2,42 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,100:000000&height=180&section=header&text=Sukesan&fontSize=42&fontColor=ffffff&fontAlignY=35&animation=fadeIn" width="100%" />
 
-**Computer Engineering @ Toronto Metropolitan University**
+**Computer Engineering Graduate — Toronto Metropolitan University**
 
-Building **deterministic trading infrastructure**, **market-data systems**, and **low-latency software**.
+Building **trading infrastructure**, **market-data systems**, and **deterministic research software**.
 
 </div>
 
 <br>
 
-## Technical Focus
+<h2 align="center">Technical Focus</h2>
 
-**Trading Systems**  
-`Backtesting` `Event-Driven Simulation` `Execution Modeling` `Walk-Forward Validation` `Monte Carlo` `Risk Controls`
+<div align="center">
 
-**Market Data & Systems Engineering**  
-`C++20` `Python` `Low-Latency Systems` `Binary Logging` `Deterministic Replay` `Multithreading` `Lock-Free Queues`
+**Languages**
+`C++20` `Python` `Rust`
 
-**Data Engineering & Research Tooling**  
-`Polars` `Pandas` `NumPy` `PyArrow` `SQL` `YAML` `CLI Tooling`
+**Trading & Market Systems**
+`Event-Driven Backtesting` `Execution Simulation` `Market Data` `Deterministic Replay` 
+<br>
+`Risk & Validation`
 
-**Software Quality & Infrastructure**  
-`pytest` `Catch2` `ruff` `mypy` `CMake` `GitHub Actions` `Linux`
+**Systems & Infrastructure**
+`WebSockets` `asyncio` `Binary Logging` `Parquet` `Polars` `SQLite` `CMake` `GitHub Actions` `Linux`
+
+</div>
 
 <br>
 
-## Featured Engineering
+<h2 align="center">Featured Engineering</h2>
 
-| Project | Description | Stack |
-|:--|:--|:--|
-| [**Meridian**](https://github.com/sukesan7/meridian) | Deterministic, event-driven backtesting engine for intraday futures research, built around causal feature generation, next-bar-open execution, strict RTH session handling, immutable run artifacts, walk-forward validation, Monte Carlo analysis, and CI-enforced determinism checks. | `Python 3.10+` `Pandas` `NumPy` `Parquet` `YAML` `pytest` `mypy` `Ruff` `GitHub Actions` |
-| [**Auro**](https://github.com/sukesan7/auro) | C++20 market-data infrastructure for capturing crypto exchange feeds, writing compact append-only binary recordings, building replay indexes, and deterministically replaying streams for parser benchmarking and offline analysis. | `C++20` `CMake` `simdjson` `CLI11` `Catch2` `Boost.Beast/Asio` `OpenSSL` |
-| [**Astra**](https://github.com/sukesan7/astra) | IMC Prosperity 4 research terminal with deterministic backtesting, portal-parity execution, scenario stress testing, walk-forward validation, hyperparameter optimization, visual analytics, and AST-based submission bundling. | `Python 3.11+` `Next.js` `Parquet` `YAML` `Ruff` `AST Tooling` `Type-Checked Tests` |
-| [**Instigator**](https://github.com/sukesan7/instigate-cafe-bot) | Modular Discord operations bot with slash-command tooling, ATS job aggregation, transit and market alert pollers, SQLite-backed persistence, server economy/game systems, and a Gemini-powered mention assistant. | `Python 3.11+` `discord.py` `SQLite` `asyncio` `Gemini API` `ATS APIs` `Yahoo Finance` |
-| [**Aegis**](https://github.com/sukesan7/aegis) | Real-time EMS navigation and routing telemetry dashboard with OSM-based routing, live vehicle simulation, disruption re-routing, AI triage, and Dijkstra vs Duan–Mao BM-SSSP benchmark visualization. Winner of York Region’s Best Community Impact Hack. | `React` `TypeScript` `FastAPI` `MapLibre GL` `OSMnx` `NetworkX` `Recharts` `Node.js` |
+|                                     Project                                    | Description                                                                                                                                                                                                                                             |                                       Stack                                      |
+| :----------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------: |
+|   [**meridian-backtester**](https://github.com/sukesan7/meridian-backtester)   | Deterministic, event-driven futures backtester with causal feature pipelines, controlled next-bar execution, strict session handling, immutable run artifacts, walk-forward evaluation, Monte Carlo risk analysis, and CI-enforced determinism checks.  |     `Python 3.12` `Pandas` `NumPy` `Parquet` `pytest` `mypy`    |
+|                  [**Auro**](https://github.com/sukesan7/auro)                  | C++20 market-data capture and replay system with WebSocket ingestion, append-only binary recordings, CRC integrity checks, replay indexing, SPSC queues, and deterministic offline benchmarking.                                                        |     `C++20` `CMake` `Boost.Asio/Beast` `simdjson` `CLI11` `Catch2` `OpenSSL`     |
+|                 [**Astra**](https://github.com/sukesan7/astra)                 | Quantitative research terminal built for IMC Prosperity 4, providing tick-level causal replay, portal-parity execution, scenario stress testing, walk-forward validation, hyperparameter sweeps, visual diagnostics, and AST-based submission bundling. |       `Python 3.11` `Next.js` `TypeScript` `Parquet` `YAML` `pytest` `Ruff`      |
+| [**meridian-intelligence**](https://github.com/sukesan7/meridian-intelligence-bot) | Asynchronous market-intelligence and alerting service that ingests external feeds, normalizes and deduplicates events, persists processing state, applies market-session-aware routing, and distributes configurable real-time alerts.                  | `Python 3.11` `discord.py` `asyncio` `aiohttp` `aiosqlite` `feedparser` `pytest` |
+| [**campus-operations-bot**](https://github.com/sukesan7/instigate-cafe-bot) | Long-running Discord automation platform for a university community, with modular slash commands, scheduled pollers, ATS job aggregation, transit and market alerts, SQLite persistence, and Gemini-assisted responses.                                 |   `Python 3.11` `discord.py` `asyncio` `aiohttp` `SQLite` `Gemini API` `pytest`  |
 
 <div align="center">
 
